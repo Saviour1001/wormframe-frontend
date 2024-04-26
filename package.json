@@ -7,7 +7,7 @@
   "license": "Apache 2.0",
   "scripts": {
     "main": "ts-node ./ts-scripts/main.ts",
-    "deploy": "npm run build; npm run deployMockToken; npm run deployHelloToken",
+    "deploy": "npm run build; npm run deployHelloToken",
     "deployMockToken": "ts-node ./ts-scripts/main.ts --deployMockToken",
     "deployHelloToken": "ts-node ./ts-scripts/main.ts --deployHelloToken",
     "build": "npm install; forge build; forge remappings > remappings.txt; npm run typechain",

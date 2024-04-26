@@ -1,7 +1,11 @@
 import { ethers, Wallet } from "ethers";
 import { readFileSync, writeFileSync } from "fs";
 
-import { HelloToken, HelloToken__factory } from "./ethers-contracts";
+import {
+  HelloToken,
+  HelloToken__factory,
+  HelloTokenNative__factory,
+} from "./ethers-contracts";
 import { ChainId } from "@certusone/wormhole-sdk";
 
 export interface ChainInfo {
@@ -28,7 +32,7 @@ export function getHelloToken(chainId: number) {
   if (!deployed) {
     throw new Error(`No deployed hello token on chain ${chainId}`);
   }
-  return HelloToken__factory.connect(deployed, getWallet(chainId));
+  return HelloTokenNative__factory.connect(deployed, getWallet(chainId));
 }
 
 export function getChain(chainId: number): ChainInfo {

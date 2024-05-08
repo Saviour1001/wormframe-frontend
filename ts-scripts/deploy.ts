@@ -25,7 +25,10 @@ export async function deploy() {
     const helloToken = await new HelloTokenNative__factory(signer).deploy(
       chain.wormholeRelayer,
       chain.tokenBridge!,
-      chain.wormhole
+      chain.wormhole,
+      {
+        gasLimit: 2_000_000,
+      }
     );
     await helloToken.deployed();
 

@@ -1,7 +1,39 @@
 {
-  "sourceChain": 6,
-  "targetChain": 14,
+  "sourceChain": 10005,
+  "targetChain": 10004,
   "chains": [
+    {
+      "description": "Base",
+      "chainId": 30,
+      "rpc": "https://rpc.ankr.com/base",
+      "tokenBridge": "0x8d2de8d2f73F1F4cAB472AC9A881C9b123C79627",
+      "wormholeRelayer": "0x706f82e9bb5b0813501714ab5974216704980e31",
+      "wormhole": "0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6"
+    },
+    {
+      "description": "Optimism",
+      "chainId": 24,
+      "rpc": "https://rpc.ankr.com/optimism",
+      "tokenBridge": "0x1D68124e65faFC907325e3EDbF8c4d84499DAa8b",
+      "wormholeRelayer": "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911",
+      "wormhole": "0xEe91C335eab126dF5fDB3797EA9d6aD93aeC9722"
+    },
+    {
+      "description": "BaseSepolia",
+      "chainId": 10004,
+      "rpc": "https://rpc.ankr.com/base_sepolia",
+      "tokenBridge": "0x86F55A04690fd7815A3D802bD587e83eA888B239",
+      "wormholeRelayer": "0x93BAD53DDfB6132b0aC8E37f6029163E63372cEE",
+      "wormhole": "0x79A1027a6A159502049F10906D333EC57E95F083"
+    },
+    {
+      "description": "OptimismSepolia",
+      "chainId": 10005,
+      "rpc": "https://rpc.ankr.com/optimism_sepolia",
+      "tokenBridge": "0x99737Ec4B815d816c49A385943baf0380e75c0Ac",
+      "wormholeRelayer": "0x93BAD53DDfB6132b0aC8E37f6029163E63372cEE",
+      "wormhole": "0x31377888146f3253211EFEf5c676D41ECe7D58Fe"
+    },
     {
       "description": "Goerli - Ethereum",
       "chainId": 2,
